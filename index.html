@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>Awesome Books</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Book Collection</h1>
+    </header>
+    
+    <section id="book-entry">
+        <label for="book-title">Book Title:</label>
+        <input id="book-title" type="text" placeholder="Enter the title here" required> <br><br>
+        
+        <label for="book-author">Author's Name:</label>
+        <input id="book-author" type="text" placeholder="Who wrote it?" required> <br><br>
+        
+        <button id="add-book-button" onclick="addNewBook()">Add to Collection</button>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>My Book List</h2>
+        <div id="book-collection"></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 My Book Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
